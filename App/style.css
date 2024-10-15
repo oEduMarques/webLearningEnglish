@@ -1,0 +1,191 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh; /* Altura mínima para garantir que o footer fique no final da página */
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: rgb(96, 96, 238);
+    width: 100%;
+    top: 0;
+}
+
+#header-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f4f4f4;
+    padding: 10px;
+    margin: 1px;
+}
+
+header nav a {
+    color: #f4f4f4;
+    font-size: 1.3em;
+    margin: 10px;
+    text-decoration: none;
+}
+
+header div h1 {
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    transition: color 0.2s text-decoration 0.2s;
+}
+
+#top-site {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    width: 800px;
+}
+
+#description {
+    background-color: #f9f9f9;
+    font-size: 1.3em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    width: auto;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+aside {
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    border: 1px solid #ccc; /* Borda leve */
+    padding: 15px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+ul li {
+    list-style-type: none;
+    /* Estilize conforme necessário */
+}
+
+img {
+    height: 30px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.accordion-item-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+}
+
+.accordion-item-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-item-header::after {
+    content: '\25B6'; /* Seta apontando para a direita */
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.accordion-item.active .accordion-item-header::after {
+    transform: rotate(90deg); 
+    max-height: 1000px; 
+    transition: max-height 0.5s ease;
+}
+
+.accordion-item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 15px;
+}
+
+.accordion-item-content p {
+    margin: 15px 0;
+}
+
+.content-study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(90vh - 60px); /* Altura mínima para garantir espaço para o footer */
+}
+
+.content-study h2 {
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table th, table td {
+    text-align: center;
+}
+
+table td:first-child {
+    width: 30%;
+}
+
+table td:last-child {
+    width: 10%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: relative; /* Define o footer como relativo ao conteúdo */
+    width: 100%;
+    bottom: 0;
+}
