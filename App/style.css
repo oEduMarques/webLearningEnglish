@@ -69,6 +69,7 @@ header nav a:hover {
 
 #description {
     font-size: 1.3em;
+    text-align: justify;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -80,7 +81,8 @@ header nav a:hover {
 }
 
 #study-english {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    text-align: justify;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -246,18 +248,28 @@ footer {
 @media (max-width: 768px) {
     #all-top-site {
         flex-direction: column;
-        padding: 10px;
+        padding: 30px;
         width: 100%;
+        padding-top: 350px;
+        border-radius: 0 0 0;
     }
-
+    
     header {
         flex-wrap: wrap;
         padding: 10px;
+        margin-bottom: 500px;
     }
-
+    header div h1 {
+        margin-left: 15px;
+    }
+    
     header nav a {
         font-size: 1em;
-        margin: 5px;
+        margin: 15px;
+    }
+    
+    #description, #study-english {
+        font-size: 1.2em;
     }
 
     .accordion-item-header {
@@ -265,8 +277,17 @@ footer {
     }
 
     aside {
+        display: flex;
+        justify-content: center;
+        text-align: center;
         width: 100%;
-        margin: 10px 0;
+        margin: 10px;
+    }
+
+    .container-aside {
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .content-container, #description, #study-english {
